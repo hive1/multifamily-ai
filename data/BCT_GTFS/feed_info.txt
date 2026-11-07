@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
+B.C. Transit,https://gobroomecounty.com/transit,en,20260821,20271231,20260822,ronald.hirst@broomecountyny.gov,https://broomecountyny.gov/transit/gtfs

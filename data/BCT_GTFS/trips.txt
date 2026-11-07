@@ -1,0 +1,835 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id,wheelchair_accessible,bikes_allowed
+3,mtwtf,R3_Park_Ave_EarlyAM_T01,BC Junction,1,,3_inb,1,1
+3,mtwtf,R3_Park_Ave_T01,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T02,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T03,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T04,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T05,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T06,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T07,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T08,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T09,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T10,Southside,0,,3_Loop,1,1
+3,mtwtf,R3_Park_Ave_T11,Southside,0,,3_Loop,1,1
+3,mttf_BHS-AM,R3_Park_Ave_BHS-MTTF_T01,Ross Park Zoo,0,,3_Loop_BHS,1,1
+3,mttf_BHS-AM,R3_Park_Ave_BHS-MTTF_T02,Ross Park Zoo,0,,3_Loop_BHS,1,1
+3,w_BHS-AM,R3_Park_Ave_BHS-Wednesday_T01,Ross Park Zoo,0,,3_Loop_BHS,1,1
+3,w_BHS-AM,R3_Park_Ave_BHS-Wednesday_T02,Ross Park Zoo,0,,3_Loop_BHS,1,1
+3,mtwtf_NO_BHS,R3_Park_Ave-BHS-Closed_T01,Southside,0,,3_Loop,1,1
+3,mtwtf_NO_BHS,R3_Park_Ave-BHS-Closed_T02,Southside,0,,3_Loop,1,1
+3,mtwtf_NO_BHS,R3_Park_Ave-BHS-Closed_T03,Southside,0,,3_Loop,1,1
+3,mtwtf_BHS-PM,R3and5_BHS_PM_T01,Southside/BHS,0,,3_5_BHS_PM,1,1
+5,mtwtf,R5a_T01,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T02,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T03,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T04,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T05,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T06,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T07,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T08,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T09,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T10,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T11,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T12,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T13,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T14,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5a_T15,Binghamton University,0,,5otb-to-17,1,1
+5,mtwtf,R5b_T01,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5b_T02,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5b_T03,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5b_T04,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5b_T05,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5b_T06,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T01,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T02,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T03,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T04,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T05,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T06,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T07,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T08,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T09,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T10,Binghamton University,0,,5otb-to-15,1,1
+5,sat,R5_otb_SATURDAY_T11,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T01,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T02,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T03,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T04,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T05,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T06,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T07,Binghamton University,0,,5otb-to-15,1,1
+5,sun,R5_otb_Sunday_T08,Binghamton University,0,,5otb-to-15,1,1
+5,mtwtf,R5_inb_MF_Weekday_T01,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T02,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T03,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T04,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T05,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T06,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T07,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T08,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T09,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T10,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T11,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T12,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T13,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T14,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T15,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T16,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_Weekday_T17,BC Junction,1,,5inb,1,1
+5,mttf_BHS-AM,R5_inb_MF_BHS_MTTH_T01,BC Junction/BHS,1,,5inbBHS,1,1
+5,mttf_BHS-AM,R5_inb_MF_BHS_MTTH_T02,BC Junction/BHS,1,,5inbBHS,1,1
+5,w_BHS-AM,R5_inb_MF_BHS_Wednesday_T01,BC Junction/BHS,1,,5inbBHS,1,1
+5,w_BHS-AM,R5_inb_MF_BHS_Wednesday_T02,BC Junction/BHS,1,,5inbBHS,1,1
+5,mtwtf_NO_BHS,R5_inb_MF_BHS-Closed_T01,BC Junction,1,,5inb,1,1
+5,mtwtf_NO_BHS,R5_inb_MF_BHS-Closed_T02,BC Junction,1,,5inb,1,1
+5,mtwtf_NO_BHS,R5_inb_MF_BHS-Closed_T03,BC Junction,1,,5inb,1,1
+5,mtwtf,R5_inb_MF_nite_NO-Tremont_T01,BC Junction,1,,5inb_NITE,1,1
+5,mtwtf,R5_inb_MF_nite_NO-Tremont_T02,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T01,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T02,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T03,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T04,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T05,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T06,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T07,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T08,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T09,BC Junction,1,,5inb_NITE,1,1
+5,sat,R5_inb_STRDAY_begin050117_T10,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T01,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T02,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T03,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T04,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T05,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T06,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T07,BC Junction,1,,5inb_NITE,1,1
+5,sun,R5_inb_Sunday_begin050117_T08,BC Junction,1,,5inb_NITE,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T01,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T02,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T03,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T04,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T05,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T06,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T07,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T08,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T09,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T10,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_MF_with_AR_with_Glenwood_T11,Oakdale Commons,0,,7otb_full,1,1
+7,mtwtf,R7_otb_with_AR_no_LegBay_T01,Oakdale Commons,0,,7otb_710AM,1,1
+7,mtwtf,R7_otb_no_AR_LB_request_T01,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_LB_request_T02,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_LB_request_T03,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_LB_request_T04,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_with_LB_T01,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_with_LB_T02,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_no_AR_with_LB_T03,Oakdale Commons,0,,7otb_No_AR,1,1
+7,mtwtf,R7_otb_lastbus_T01,Oakdale Commons,0,,7otb_9PM,1,1
+7,mtwtf,R7_otb_lastbus_T02,Oakdale Commons,0,,7otb_9PM,1,1
+7,mtwtf,R7_inb_with_AR_T01,BC Junction,1,,7inb_with_AR,1,1
+7,mtwtf,R7_inb_with_AR_T02,BC Junction,1,,7inb_with_AR,1,1
+7,mtwtf,R7_inb_with_AR_T03,BC Junction,1,,7inb_with_AR,1,1
+7,mtwtf,R7_inb_with_AR_T04,BC Junction,1,,7inb_with_AR,1,1
+7,mtwtf,R7_inb_no_AR_T01,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T02,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T03,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T04,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T05,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T06,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T07,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T08,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T09,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T10,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T11,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T12,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T13,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_no_AR_T14,BC Junction,1,,7inb_with_Walmart,1,1
+7,mtwtf,R7_inb_NITE_T01,BC Junction,1,,7inb_No_Walmart,1,1
+7,mtwtf,R7_inb_NITE_T02,BC Junction,1,,7inb_No_Walmart,1,1
+7,mtwtf,R7_inb_NITE_T03,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_otb_Saturday_T01,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T02,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T03,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T04,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T05,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T06,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T07,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T08,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T09,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T10,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T11,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_otb_Saturday_T12,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sat,R7_inb_STRDAY_T01,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T02,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T03,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T04,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T05,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T06,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T07,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T08,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T09,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T10,BC Junction,1,,7inb_No_Walmart,1,1
+7,sat,R7_inb_STRDAY_T11,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_otb_SNDAY_T01,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T02,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T03,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T04,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T05,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T06,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T07,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_otb_SNDAY_T08,Oakdale Commons,0,,7otb_No_AR,1,1
+7,sun,R7_inb_SNDAY_T01,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T02,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T03,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T04,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T05,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T06,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_T07,BC Junction,1,,7inb_No_Walmart,1,1
+7,sun,R7_inb_SNDAY_925AM_T01,,1,,7inb_LB,1,1
+8,mtwtf,R8 River Rd Loop_T01,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8 River Rd Loop_T02,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T01,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T02,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T03,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T04,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T05,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T06,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T07,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T08,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_T09,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8a_with_jail_T01,Chenango Park & Ride,0,,8otb_Jail,1,1
+8,mtwtf,R8a_with_jail_T02,Chenango Park & Ride,0,,8otb_Jail,1,1
+8,mtwtf,R8a_with_jail_T03,Chenango Park & Ride,0,,8otb_Jail,1,1
+8,mtwtf,R8a_with_jail_T04,Chenango Park & Ride,0,,8otb_Jail,1,1
+8,mtwtf,R8a_with_jail_T05,Chenango Park & Ride,0,,8otb_Jail,1,1
+8,mtwtf,Bus Route 8a_with_Achieve_710AM_T01,Chenango Park & Ride,0,,8otb_Achieve,1,1
+8,mtwtf,R8a_with_achieve_T01,Chenango Park & Ride,0,,8otb_Achieve,1,1
+8,mtwtf,R8_otb_NITE_T01,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8_otb_NITE_T02,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8_otb_NITE_T03,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf,R8_otb_lastbus_T01,Chenango Park & Ride,0,,8otb_LR,1,1
+8,mtwtf_SB,R8a_broome_express_last_T01,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T01,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T02,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T03,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T04,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T05,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_broome_express_T06,SUNY Broome,0,,8SB_X,1,1
+8,mtwtf_SB,R8a_JC_broome_express_T01,SUNY Broome,0,,8SB_X_Main_otb,1,1
+8,mtwtf,R8inb_no_jail_T01,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T02,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T03,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T04,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T05,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T06,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T07,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T08,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T09,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T10,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T11,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T12,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T13,BC Junction,1,,8inb,1,1
+8,mtwtf,R8inb_no_jail_T14,BC Junction,1,,8inb,1,1
+8,mtwtf,R8b_with_jail_T01,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_jail_T02,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_jail_T03,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_jail_T04,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_jail_T05,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_jail_T06,BC Junction,1,,8inb_Jail,1,1
+8,mtwtf,R8b_with_achieve_T01,BC Junction,1,,8inb_Achieve,1,1
+8,mtwtf_SB,R8c_SB_Express_T01,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_T02,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_T03,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_T04,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_T05,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_T06,BC Junction,1,,8SB_X_inb,1,1
+8,mtwtf_SB,R8c_SB_Express_Last_T01,BC Junction,1,,8SB_X_inb,1,1
+8,sat,R8d_Saturday_T01,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T02,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T03,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T04,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T05,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T06,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T07,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T08,Chenango Park & Ride,0,,8otb_SAT,1,1
+8,sat,R8d_Saturday_T09,Chenango Park & Ride,0,,8otb_SAT,1,1
+40.8,sat,R8d_Saturday_morning_T01,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sat,R8d_Saturday_morning_T02,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sat,R8d_Saturday_morning_T03,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T01,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T02,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T03,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T04,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T05,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T06,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T07,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+40.8,sun,R8d_Sunday_T08,Chenango Park & Ride Combo,0,,40.8Combo,1,1
+8,sat,R8e_Saturday_T01,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T02,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T03,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T04,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T05,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T06,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T07,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T08,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T09,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T10,BC Junction,1,,8inb,1,1
+8,sat,R8e_Saturday_T11,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T01,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T02,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T03,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T04,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T05,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T06,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T07,BC Junction,1,,8inb,1,1
+8,sun,R8e_Sunday_T08,BC Junction,1,,8inb,1,1
+12,mtwtf,R12a_T01,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T02,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T03,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T04,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T05,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T06,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T07,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T08,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T09,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T10,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T11,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T12,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T13,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T14,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T15,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T16,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T17,Saratoga Apts,0,,12otb,1,1
+12,mtwtf,R12a_T18,Saratoga Apts,0,,12otb,1,1
+12,mtwtf_BHS-PM,R12a_BHS_T01,Saratoga Apts,0,,12otb_BHS,1,1
+12,mtwtf,R12b_T01,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T02,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T03,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T04,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T05,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T06,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T07,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T08,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T09,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T10,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T11,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T12,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T13,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T14,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T15,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T16,BC Junction,1,,12inb,1,1
+12,mtwtf,R12b_T17,BC Junction,1,,12inb,1,1
+12,mttf_BHS-AM,R12b_BHS_MTTF_T01,Binghamton High School,1,,12inb_BHS,1,1
+12,mttf_BHS-AM,R12b_BHS_MTTF_T02,Binghamton High School,1,,12inb_BHS,1,1
+12,mttf_BHS-AM,R12b_BHS_MTTF_T03,Binghamton High School,1,,12inb_BHS,1,1
+12,w_BHS-AM,R12b_BHS_Wednesday_T01,Binghamton High School,1,,12inb_BHS,1,1
+12,w_BHS-AM,R12b_BHS_Wednesday_T02,Binghamton High School,1,,12inb_BHS,1,1
+12,w_BHS-AM,R12b_BHS_Wednesday_T03,Binghamton High School,1,,12inb_BHS,1,1
+12,mtwtf_NO_BHS,R12b_BHS_School Closed_T01,Binghamton High School,1,,12inb,1,1
+12,mtwtf_NO_BHS,R12b_BHS_School Closed_T02,Binghamton High School,1,,12inb,1,1
+12.3,sat,R12c_Saturday_T01,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T02,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T03,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T04,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T05,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T06,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T07,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+12.3,sat,R12c_Saturday_T08,Combo Conklin Ave and Park Ave,0,,12.3combo,1,1
+15,mtwtf,R15_otb_T01,Binghamton University,0,,15otb,1,1
+15,mtwtf,R15_otb_T02,Binghamton University,0,,15otb,1,1
+15,mtwtf,R15_otb_T03,Binghamton University,0,,15otb,1,1
+15,mtwtf,R15_otb_Pharmacy_T01,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T02,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T03,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T04,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T05,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T06,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T07,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T08,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T09,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T10,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T11,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T12,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T13,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T14,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T15,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_Pharmacy_T16,Binghamton University,0,,15otb-Pharmacy,1,1
+15,mtwtf,R15_otb_evening_T01,Binghamton University,0,,15otb_mohawk,1,1
+15,mtwtf,R15_otb_evening_T02,Binghamton University,0,,15otb_mohawk,1,1
+15,mtwtf,R15_otb_evening_T03,Binghamton University,0,,15otb_mohawk,1,1
+15,mtwtf,R15_otb_evening_T04,Binghamton University,0,,15otb_mohawk,1,1
+15,mtwtf_BU,R15_BU_Express_T01,Binghamton University,0,,15otb_BU_Express,1,1
+15,mtwtf_BU,R15_BU_Express_T02,Binghamton University,0,,15otb_BU_Express,1,1
+15,mtwtf_BU,R15_BU_Express_T03,Binghamton University,0,,15otb_BU_Express,1,1
+15,mtwtf_BU,R15_BU_Express_T04,Binghamton University,0,,15otb_BU_Express,1,1
+15,mtwtf_BU,R15otb_BU_Express_last_T01,Binghamton University,0,,15otb_BU_Express,1,1
+15,mtwtf,R15inb_T01,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb_T02,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb_T03,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb_T04,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb_T05,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb_T06,BC Junction,1,,15inb,1,1
+15,mtwtf,R15inb-Pharmacy_T01,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T02,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T03,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T04,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T05,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T06,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T07,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T08,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T09,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T10,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T11,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T12,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T13,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T14,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T15,BC Junction,1,,15inb-Pharmacy,1,1
+15,mtwtf,R15inb-Pharmacy_T16,BC Junction,1,,15inb-Pharmacy,1,1
+15,sat,R15out_Sat_T01,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T02,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T03,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T04,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T05,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T06,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T07,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T08,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T09,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15out_Sat_T10,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sat,R15inb_sat_T01,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T02,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T03,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T04,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T05,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T06,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T07,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T08,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T09,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T10,BC Junction,1,,15inb,1,1
+15,sat,R15inb_sat_T11,BC Junction,1,,15inb,1,1
+15,sun,R15otb_Sun_T01,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T02,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T03,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T04,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T05,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T06,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T07,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15otb_Sun_T08,Binghamton University,0,,15otb_mohawk_wkends,1,1
+15,sun,R15inb_sun_T01,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T02,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T03,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T04,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T05,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T06,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T07,BC Junction,1,,15inb,1,1
+15,sun,R15inb_sun_T08,BC Junction,1,,15inb,1,1
+16,mtwtf_BU,R16b_BU_express_West_T01,Westbound Main St and Floral Ave,1,,16_West_COVID-19,1,1
+16,mtwtf_BU,R16b_BU_express_West_T02,Westbound Main St and Floral Ave,1,,16_West_COVID-19,1,1
+16,mtwtf_BU,R16b_BU_express_West_T03,Westbound Main St and Floral Ave,1,,16_West_COVID-19,1,1
+16,mtwtf_BU,R16b_BU_express_last_T01,Westbound Main St and Floral Ave,1,,16_West_COVID-19,1,1
+17,mtwtf,R17inb_6AM-5.1.17_T01,Binghamton University,1,,17inb_6AM_COVID-19,1,1
+17,mtwtf,R17otb_LB-5.1.17_T01,Legacy Bay and Glenwood Rd,0,,17otb_LB-COVID-19,1,1
+17,mtwtf,R17otb_LB-5.1.17_T02,Legacy Bay and Glenwood Rd,0,,17otb_LB-COVID-19,1,1
+17,mtwtf,R17inb_LB-5.1.17_T01,Binghamton University,1,,17inb_LB_COVID-19,1,1
+17,mtwtf,R17inb_LB-5.1.17_T02,Binghamton University,1,,17inb_LB_COVID-19,1,1
+17,mtwtf,R17otb_8AM-5.1.17_T01,Oakdale Commons,0,,17otb_8AM-COVID-19,1,1
+17,mtwtf,R17inb_830AM-5.1.17_T01,Binghamton University,1,,17inb_830AM-COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T01,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T02,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T03,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T04,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T05,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T06,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T07,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T08,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T09,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T10,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T11,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T12,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T13,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T14,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T15,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM_T16,JC Loop,0,,17_JC_LOOP_COVID-19,1,1
+17,mtwtf,R17_BU-ODM-JC_schools-5.1.17_T01,JC Schools,0,,17_JC_LOOP_JCS_COVID-19,1,1
+28,mtwtf,R28b_early_morning_T01,BC Junction,1,,28inb_SAT,1,1
+28,mtwtf,R28otb_T01,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T02,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T03,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T04,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T05,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T06,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T07,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T08,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T09,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T10,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T11,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_T12,Greater Binghamton Health Care,0,,28_Loop,1,1
+28,mtwtf,R28otb_Court_T01,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T02,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T03,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T04,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T05,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T06,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mtwtf,R28otb_Court_T07,Greater Binghamton Health Care via Court St,1,,28_Loop_CS,1,1
+28,mttf_BHS-AM,R28Loop_BHS-MTTF_T01,BC Junction,1,,28_BHS_AM,1,1
+28,mttf_BHS-AM,R28Loop_BHS-MTTF_T02,BC Junction,1,,,1,1
+28,w_BHS-AM,R28Loop_BHS-Wednesday_T01,BC Junction,1,,28_BHS_AM,1,1
+28,mtwtf_BHS-PM,R28otb_BHS_PM_T01,Eastside Greater Binghamton Health Care,0,,28_BHS_PM,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T01,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T02,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T03,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T04,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T05,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T06,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T07,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T08,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T09,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T10,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T11,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T12,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T13,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T14,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T15,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T16,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_begin050117_T17,Express-Endicott,0,,35Xotb,1,1
+35,mtwtf,R35X_otb_MF_NCI_begin050117_T01,Express-Endicott,0,,35Xotb_NCI,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T01,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T02,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T03,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T04,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T05,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T06,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T07,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T08,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T09,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T10,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T11,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T12,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T13,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_begin050117_T14,Express-Binghamotn,1,,35Xinb,1,1
+35,mtwtf,R35X_inb_MF_WC_begin050117_T01,Express-Binghamton,1,,35Xinb_WC,1,1
+35,mtwtf,R35X_inb_MF_WC_begin050117_T02,Express-Binghamton,1,,35Xinb_WC,1,1
+35,mtwtf,R35X_inb_MF_WC_begin050117_T03,Express-Binghamton,1,,35Xinb_WC,1,1
+35,mtwtf,R35X_inb_MF_WC_begin050117_T04,Express-Binghamton,1,,35Xinb_WC,1,1
+35,mtwtf,R35X_inb_MF_WC_begin050117_T05,Express-Binghamton,1,,35Xinb_WC,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T01,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T02,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T03,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T04,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T05,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T06,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T07,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_begin050117_T08,Endicott via Main St,0,,35Motb_WA,1,1
+35,mtwtf,R35M_otb_MF_510and910-PM_102521_T01,Endicott via Main St,0,,35Motb_NITE,1,1
+35,mtwtf,R35M_otb_MF_510and910-PM_102521_T02,Endicott via Main St,0,,35Motb_NITE,1,1
+35,mtwtf,R35M_otb_MF_7PM_begin050117_T01,Endicott via Main St,0,,35Motb_NITE,1,1
+35,mtwtf,R35Wotb_MF_begin050117_T01,Endicott via Watson,0,,35Wotb_WA,1,1
+35,mtwtf,R35Wotb_MF_begin050117_T02,Endicott via Watson,0,,35Wotb_WA,1,1
+35,mtwtf,R35Wotb_MF_begin050117_T03,Endicott via Watson,0,,35Wotb_WA,1,1
+35,mtwtf,R35Wotb_MF_begin050117_T04,Endicott via Watson,0,,35Wotb_WA,1,1
+35,mtwtf,R35Wotb_MF_EVENING_begin050117_T01,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,mtwtf,R35Wotb_MF_EVENING_begin050117_T02,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,mtwtf,R35ESotb_MF_begin050117_T01,Endicott via Watson,0,,35ES_OTB,1,1
+35,mtwtf,R35ESotb_MF_begin050117_T02,Endicott via Watson,0,,35ES_OTB,1,1
+35,mtwtf,R35ESotb_MF_begin050117_T03,Endicott via Watson,0,,35ES_OTB,1,1
+35,mtwtf,R35ESotb_MF_begin050117_T04,Endicott via Watson,0,,35ES_OTB,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T01,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T02,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T03,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T04,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T05,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T06,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T07,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T08,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_begin050117_T09,BC Junction,1,,35Minb_WA,1,1
+35,mtwtf,R35M_inb_MF_8PM_begin050117_T01,BC Junction via Main,1,,35Minb_NITE,1,1
+35,mtwtf,R35M_inb_MF_8PM_begin050117_T02,BC Junction via Main,1,,35Minb_NITE,1,1
+35,mtwtf,R35W_inb_MF_begin050117_T01,BC Junction,1,,35Winb_WA,1,1
+35,mtwtf,R35W_inb_MF_begin050117_T02,BC Junction,1,,35Winb_WA,1,1
+35,mtwtf,R35W_inb_MF_begin050117_T03,BC Junction,1,,35Winb_WA,1,1
+35,mtwtf,R35W_inb_MF_begin050117_T04,BC Junction,1,,35Winb_WA,1,1
+35,mtwtf,R35W_inb_MF_begin050117_T05,BC Junction,1,,35Winb_WA,1,1
+35,mtwtf,R35W_inb_7PM_begin050117_T01,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,mtwtf,R35ES_inbound0217_T01,BC Junction via Watson,1,,35ESinb,1,1
+35,mtwtf,R35ES_inbound0217_T02,BC Junction via Watson,1,,35ESinb,1,1
+35,mtwtf,R35ES_inbound0217_T03,BC Junction via Watson,1,,35ESinb,1,1
+35,mtwtf,R35ES_inbound0217_T04,BC Junction via Watson,1,,35ESinb,1,1
+35,sat,R35M_OTB_STRDY_T01,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35M_OTB_STRDY_T02,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35M_OTB_STRDY_T03,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35M_OTB_STRDY_T04,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35M_OTB_STRDY_T05,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35M_OTB_STRDY_T06,Endicott via Main St,0,,35Motb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T01,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T02,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T03,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T04,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T05,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T06,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35W_OTB_STRDY_begin050117_T07,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T01,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T02,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T03,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T04,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T05,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35M_INB_STRDY_begin050117_T06,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sat,R35W_inb_STRDY_begin050117_T01,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sat,R35W_inb_STRDY_begin050117_T02,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sat,R35W_inb_STRDY_begin050117_T03,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sat,R35W_inb_STRDY_begin050117_T04,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sat,R35W_inb_STRDY_begin050117_T05,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sun,R35M_OTB_SNDY_begin050117_T01,Endicott via Main,0,,35Motb_NITE,1,1
+35,sun,R35M_OTB_SNDY_begin050117_T02,Endicott via Main,0,,35Motb_NITE,1,1
+35,sun,R35M_OTB_SNDY_begin050117_T03,Endicott via Main,0,,35Motb_NITE,1,1
+35,sun,R35M_OTB_SNDY_begin050117_T04,Endicott via Main,0,,35Motb_NITE,1,1
+35,sun,R35W_OTB_SNDY_begin050117_T01,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sun,R35W_OTB_SNDY_begin050117_T02,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sun,R35W_OTB_SNDY_begin050117_T03,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sun,R35W_OTB_SNDY_begin050117_T04,Endicott via Watson,0,,35Wotb_NITE,1,1
+35,sun,R35M _INB_SNDY_begin050117_T01,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sun,R35M _INB_SNDY_begin050117_T02,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sun,R35M _INB_SNDY_begin050117_T03,BC Junction via Main,1,,35Minb_NITE,1,1
+35,sun,R35W_INB_SNDY_begin050117_T01,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sun,R35W_INB_SNDY_begin050117_T02,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sun,R35W_INB_SNDY_begin050117_T03,BC Junction via Watson,1,,35Winb_NITE,1,1
+35,sun,R35W_INB_SNDY_begin050117_T04,BC Junction via Watson,1,,35Winb_NITE,1,1
+40,mtwtf,R40_otb_early_morning_MF_T01,Chenango Park & Ride - Hillcrest,0,,40otb_noBingPlaza,1,1
+40,mtwtf,R40_otb_early_morning_MF_T02,Chenango Park & Ride - Hillcrest,0,,40otb_noBingPlaza,1,1
+40,mtwtf,R40_otb_early_morning_MF_T03,Chenango Park & Ride - Hillcrest,0,,40otb_noBingPlaza,1,1
+40,mtwtf,R40_otb_MF_T01,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T02,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T03,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T04,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T05,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T06,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_T07,Chenango Park & Ride - Hillcrest,0,,40otb-no-lr,1,1
+40,mtwtf,R40_otb_MF_Express_T01,Chenango Park & Ride - Hillcrest,0,,40otbExpress,1,1
+40,mtwtf,R40_otb_MF_Express_T02,Chenango Park & Ride - Hillcrest,0,,40otbExpress,1,1
+40,mtwtf,R40_otb_MF_Express_T03,Chenango Park & Ride - Hillcrest,0,,40otbExpress,1,1
+40,mtwtf,R40_otb_MF_Express_T04,Chenango Park & Ride - Hillcrest,0,,40otbExpress,1,1
+40,mtwtf,R40_otb_MF_Express_T05,Chenango Park & Ride - Hillcrest,0,,40otbExpress,1,1
+40,mtwtf_BHS-PM,R40_BHS_PM-MTTF_T01,Chenango,0,,40BHS_Afternoon,1,1
+40,mtwtf,R40inb_525a_T01,BC Junction,1,,40inb_525AM,1,1
+40,mtwtf,R40inb_630AM_T01,BC Junction,1,,40inb_BHS_NoBingPlaza,1,1
+40,mttf_BHS-AM,R40inb_BHS_7AM-MTTF_T01,BC Junction,1,,40inb_BHS_NoBingPlaza,1,1
+40,mtwtf_NO_BHS,Bus Route 40inb_NO_BHS_7AM_T01,BC Junction,1,,40inb_525AM,1,1
+40,mttf_BHS-AM,R40inb_BHS_740AM-MTTF_T01,BC Junction,1,,40inb_BHS,1,1
+40,w_BHS-AM,R40inb_BHS_740AM-Wednesday_T01,BC Junction,1,,40inb_BHS,1,1
+40,w_BHS-AM,R40inb_BHS_740AM-Wednesday_T02,BC Junction,1,,40inb_BHS,1,1
+40,mtwtf_NO_BHS,Bus Route 40inb_NO_BHS_740AM_T01,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T01,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T02,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T03,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T04,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T05,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T06,BC Junction,1,,40inb,1,1
+40,mtwtf,R40inb_MF_T07,BC Junction,1,,40inb,1,1
+47,mtwtf,R47otb_MF-begin070317_T01,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T02,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T03,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T04,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T05,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T06,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T07,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T08,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T09,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T10,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T11,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T12,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T13,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T14,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T15,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T16,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T17,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47otb_MF-begin070317_T18,Outbound Town Square Mall/Endicott,0,,47otb_Endicott,1,1
+47,mtwtf,R47inb_MF_FirstBus_T01,Binghamton University,1,,47inb_Endicott_First_Bus,1,1
+47,mtwtf,R47inb_MF-Mohawk_T01,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T02,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T03,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T04,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T05,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T06,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T07,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T08,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T09,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T10,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T11,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T12,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T13,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T14,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-Mohawk_T15,Binghamton University,1,,47inb-BU_Mohawk,1,1
+47,mtwtf,R47inb_MF-BU-Union_T01,Binghamton University,1,,47inb-BU-Union,1,1
+47,mtwtf,R47inb_MF_NITE_NO_LOURDES_T01,Binghamton University,1,,47inb_Endicott_NITE,1,1
+47,mtwtf,R47inb_MF_NITE_NO_LOURDES_T02,Binghamton University,1,,47inb_Endicott_NITE,1,1
+47,sat,R47otb_Sat_ES_AM_T01,Outbound Town Square Mall,0,,47otb,1,1
+47,sat,R47inb_Sat_AM_T01,Binghamton University,1,,47inb,1,1
+47,sat,R47otb_Sat_ES_T01,Outbound Town Square Mall,0,,47otb_ES,1,1
+47,sat,R47otb_Sat_ES_T02,Outbound Town Square Mall,0,,47otb_ES,1,1
+47,sat,R47otb_Sat_ES_T03,Outbound Town Square Mall,0,,47otb_ES,1,1
+47,sat,R47otb_Sat_ES_T04,Outbound Town Square Mall,0,,47otb_ES,1,1
+47,sat,R47otb_Sat_WC_T01,Outbound Town Square Mall,0,,47otb_WC,1,1
+47,sat,R47otb_Sat_WC_T02,Outbound Town Square Mall,0,,47otb_WC,1,1
+47,sat,R47otb_Sat_WC_T03,Outbound Town Square Mall,0,,47otb_WC,1,1
+47,sat,R47otb_Sat_WC_T04,Outbound Town Square Mall,0,,47otb_WC,1,1
+47,sat,R47inb_Sat_ES_T01,Town Square Mall,1,,47inb_ES,1,1
+47,sat,R47inb_Sat_ES_T02,Town Square Mall,1,,47inb_ES,1,1
+47,sat,R47inb_Sat_ES_T03,Town Square Mall,1,,47inb_ES,1,1
+47,sat,R47inb_Sat_ES_T04,Town Square Mall,1,,47inb_ES,1,1
+47,sat,R47inb_Sat_WC_T01,Town Square Mall/Vestal,1,,47inb_WC,1,1
+47,sat,R47inb_Sat_WC_T02,Town Square Mall/Vestal,1,,47inb_WC,1,1
+47,sat,R47inb_Sat_WC_T03,Town Square Mall/Vestal,1,,47inb_WC,1,1
+47,sat,R47inb_Sat_WC_T04,Town Square Mall/Vestal,1,,47inb_WC,1,1
+48,sat,R48_otb_STRDY_T01,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_otb_STRDY_T02,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_otb_STRDY_T03,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_otb_STRDY_T04,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_otb_STRDY_T05,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_otb_STRDY_T06,Oakdale Mall,0,,48otb,1,1
+48,sat,R48_inb_STRDY_T01,Wegmans/Binghamton University,1,,48inb,1,1
+48,sat,R48_inb_STRDY_T02,Wegmans/Binghamton University,1,,48inb,1,1
+48,sat,R48_inb_STRDY_T03,Wegmans/Binghamton University,1,,48inb,1,1
+48,sat,R48_inb_STRDY_T04,Wegmans/Binghamton University,1,,48inb,1,1
+48,sat,R48_inb_STRDY_T05,Wegmans/Binghamton University,1,,48inb,1,1
+48,sat,R48_inb_STRDY_T06,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_otb_SNDY_T01,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T02,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T03,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T04,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T05,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T06,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T07,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_otb_SNDY_T08,Oakdale Mall,0,,48otb,1,1
+48,sun,R48_inb_SNDY_T01,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T02,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T03,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T04,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T05,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T06,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T07,Wegmans/Binghamton University,1,,48inb,1,1
+48,sun,R48_inb_SNDY_T08,Wegmans/Binghamton University,1,,48inb,1,1
+51,mtwtf,R51_otb_T01,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T02,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T03,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T04,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T05,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T06,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T07,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_otb_T08,Kirkwood,0,,51otb,1,1
+51,mtwtf,R51_inb_T01,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T02,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T03,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T04,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T05,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T06,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T07,BC Junction,1,,51inb,1,1
+51,mtwtf,R51_inb_T08,BC Junction,1,,51inb,1,1
+53,mtwtf,R53_otb_AM_T01,Broome Corp Park,0,,53otb_AM,1,1
+53,mtwtf,R53_otb_AM_T02,Broome Corp Park,0,,53otb_AM,1,1
+53,mtwtf,R53_otb_AM_T03,Broome Corp Park,0,,53otb_AM,1,1
+53,mtwtf,R53_inb_AM_T01,,1,,53inb,1,1
+53,mtwtf,R53_inb_AM_T02,,1,,53inb,1,1
+53,mtwtf_NO_BHS,R53_inb_AM_BHS_CLOSED_T01,,1,,53inb,1,1
+12.53,mtwtf,R53_otb_310_T01,Saratoga Apts/Broome Corp Park,0,,12.53otb,1,1
+53,mtwtf,R53_otb_430PM_T01,Broome Corp Park,0,,53otbPM,1,1
+53,mtwtf,R53_inb_PM_T01,BC Junction,1,,53inb,1,1
+53,mtwtf,R53_inb_PM_T02,BC Junction,1,,53inb,1,1
+57,mtwtf,57SSMF_OTB102323_T01,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T02,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T03,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T04,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T05,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T06,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T07,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T08,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T09,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T10,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T11,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T12,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T13,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T14,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T15,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T16,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T17,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_OTB102323_T18,Binghamton University,0,,57SSMF_OTB102323,1,1
+57,mtwtf,57SSMF_INB102023_T01,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T02,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T03,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T04,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T05,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T06,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T07,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T08,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T09,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T10,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T11,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T12,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T13,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T14,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,57SSMF_INB102023_T15,Riverside/BC Junction,1,,57SSMF_INB102023,1,1
+57,mtwtf,R57_INB_MF_1710_Evening_T01,Riverside/BC Junction,1,,57inbSS_510PM,1,1
+57,mtwtf,R57_INB_MF_020518_NITE_T01,Riverside/BC Junction,1,,57_inb_Nite,1,1
+57,mtwtf,R57_INB_MF_020518_NITE_T02,Riverside/BC Junction,1,,57_inb_Nite,1,1
+57,sat,R57_SAT_T01,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T02,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T03,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T04,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T05,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T06,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T07,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sat,R57_SAT_T08,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T01,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T02,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T03,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T04,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T05,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T06,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+57,sun,R57_Sun_T07,Town Square/Oakdale Malls,0,,57SSwknds,1,1
+91,sat,R91_otb_STRDY_T01,Town Square Mall,0,,91otb,1,1
+91,sat,R91_otb_STRDY_T02,Town Square Mall,0,,91otb,1,1
+91,sat,R91_otb_STRDY_T03,Town Square Mall,0,,91otb,1,1
+91,sat,R91_otb_STRDY_T04,Town Square Mall,0,,91otb,1,1
+91,sat,R91_otb_STRDY_T05,Town Square Mall,0,,91otb,1,1
+91,sat,R91_otb_STRDY_T06,Town Square Mall,0,,91otb,1,1
+91,sat,R91_inb_STRDY_T01,Binghamton University,1,,91inb,1,1
+91,sat,R91_inb_STRDY_T02,Binghamton University,1,,91inb,1,1
+91,sat,R91_inb_STRDY_T03,Binghamton University,1,,91inb,1,1
+91,sat,R91_inb_STRDY_T04,Binghamton University,1,,91inb,1,1
+91,sat,R91_inb_STRDY_T05,Binghamton University,1,,91inb,1,1
+91,sat,R91_inb_STRDY_T06,Binghamton University,1,,91inb,1,1
+91,sun,R91_otb_SNDY_T01,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T02,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T03,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T04,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T05,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T06,Town Square Mall,0,,91otb,1,1
+91,sun,R91_otb_SNDY_T07,Town Square Mall,0,,91otb,1,1
+91,sun,R91_inb_SNDY_T01,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T02,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T03,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T04,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T05,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T06,Binghamton University,1,,91inb,1,1
+91,sun,R91_inb_SNDY_T07,Binghamton University,1,,91inb,1,1
+122840,mtwtf,R12.28.40_Nowlan_weeknite_T01,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,mtwtf,R12.28.40_GBHC_weeknite_T01,Combo via GBHC-Old State Rd,0,,12_28_40_GBHC_OS,1,1
+122840,mtwtf,R12.28.40_ 9PM_weeknite_T01,Combo GBHC-Old State Rd,0,,12_28_40_last,1,1
+1228405,mtwtf,R12.28.40_5aLate_Nite_BEGINS-FEB-5-2018_T01,Combo GBHC-Old State,0,,12.28.40.5,1,1
+122840,sat,R12.28.40_Nowlan_Saturday_T01,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sat,R12.28.40_Nowlan_Saturday_T02,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sat,R12.28.40_GBHC_Saturday_T01,Combo GBHC Old State,0,,12_28_40_GBHC_OS,1,1
+2840,sat,R28.40_GBHC_Saturday_T01,Greater Binghamton Health Care,0,,28_40_GBHC_OS,1,1
+2840,sat,R28.40_GBHC_Saturday_T02,Greater Binghamton Health Care,0,,28_40_GBHC_OS,1,1
+2840,sat,R28.40_GBHC_Saturday_T03,Greater Binghamton Health Care,0,,28_40_GBHC_OS,1,1
+2840,sat,R28.40_GBHC_Saturday_T04,Greater Binghamton Health Care,0,,28_40_GBHC_OS,1,1
+2840,sat,R28.40_Nowlan_Saturday_T01,Greater Binghamton Health Care,0,,28_40_Nowlan,1,1
+2840,sat,R28.40_Nowlan_Saturday_T02,Greater Binghamton Health Care,0,,28_40_Nowlan,1,1
+2840,sat,R28.40_Nowlan_Saturday_T03,Greater Binghamton Health Care,0,,28_40_Nowlan,1,1
+2840,sat,R28.40_Nowlan_Saturday_T04,Greater Binghamton Health Care,0,,28_40_Nowlan,1,1
+12,sat,R12a_Saturday_Last_bus_T01,Saratoga Apts,0,,12otb,1,1
+2840,sat,R28.40_GBHC_Saturday_Last_Bus_T01,Greater Binghamton Health Care,0,,28_40_GBHC_OS,1,1
+122840,sun,R12.28.40_Very_Firstbus_Nowlan_Sunday_T01,Combo-Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sun,R12.28.40_GBHC_Sunday_T01,Combo GBHC Old State,0,,12_28_40_GBHC_OS,1,1
+122840,sun,R12.28.40_GBHC_Sunday_T02,Combo GBHC Old State,0,,12_28_40_GBHC_OS,1,1
+122840,sun,R12.28.40_GBHC_Sunday_T03,Combo GBHC Old State,0,,12_28_40_GBHC_OS,1,1
+122840,sun,R12.28.40_GBHC_Sunday_T04,Combo GBHC Old State,0,,12_28_40_GBHC_OS,1,1
+122840,sun,R12.28.40_Nowlan_Sunday_T01,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sun,R12.28.40_Nowlan_Sunday_T02,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sun,R12.28.40_Nowlan_Sunday_T03,Combo Nowlan Rd,0,,12_28_40_Nowlan,1,1
+122840,sun,R12.28.40_lastbusGBHC_Sunday_T01,Combo Nowlan Rd,0,,12_28_40_last,1,1
