@@ -37,8 +37,8 @@ struct mapNode{
 
 
 //map struct holds an array of map nodes
-int xSquares = 25;
-int ySquares = 25;
+int xSquares = 10;
+int ySquares = 10;
 //size of square in miles;
 double squareSize = 1;
 struct map{
@@ -938,6 +938,205 @@ void loadUtility(struct map* myMap, char * name){
     return;
 }
 
+//final Q value calculation
+double maxBeta [5] ={0.2,0.5,0.1,0.4,0.4};
+double beta [5]  = {0.1,0.1,0.05,0.05,0.05};
+double alpha [5] = {1,1,1,1,1};
+
+void calcQualityFactor(struct mapNode * node){
+    double q1 = pow((maxBeta[0] + node->utilityAccessFactor),alpha[0]);
+    double q2 = pow((maxBeta[1] + node->populationFactor),alpha[1]);
+    double q3 = pow((maxBeta[2] + node->employmentAccess),alpha[2]);
+    double q4 = pow((maxBeta[3] + node->jobQuantity),alpha[3]);
+    double q5 = pow((maxBeta[4] + node->rentFactor),alpha[4]);
+
+    double rawOut = q1*q2*q3*q4*q5;
+    node->quality = 0.5 + tanh(rawOut)/2;
+}
+
+//fill q values for table
+void fillQValues(struct map *myMap){
+    for(int i = 0; i < xSquares*ySquares;i++){
+        struct mapNode * node = &(myMap->nodes[i]);
+        calcQualityFactor(node);
+    }
+}
+
+//save weights function
+void saveWeights(char * name){
+    FILE * fptr;
+
+    fptr = fopen(name,"w");
+
+    if (fptr == NULL) {
+        printf("Error opening the file!\n");
+        return; 
+    }
+
+    for(int i = 0; i <5; i++){
+        fwrite(&(beta[i]), 1, sizeof(double), fptr);
+    }
+
+    for(int i = 0; i <5; i++){
+        fwrite(&(alpha[i]), 1, sizeof(double), fptr);
+    }
+
+    fclose(fptr);
+    return;
+}
+
+//load weights function
+void loadWeights( char * name){
+    FILE * fptr;
+
+    fptr = fopen(name,"r");
+
+    if (fptr == NULL) {
+        printf("Error opening the file!\n");
+        return; 
+    }
+
+    for(int i = 0; i <5; i++){
+        fread(&(beta[i]), 1, sizeof(double), fptr);
+    }
+
+    for(int i = 0; i <5; i++){
+        fread(&(alpha[i]), 1, sizeof(double), fptr);
+    }
+
+
+    fclose(fptr);
+    return;
+}
+
+//print weights function
+void printWeights(){
+
+    printf("Weights:\n");
+    printf("Constants - \n");
+    for(int i = 0; i <5; i++){
+        printf(" %f \n",beta[i]);
+    }
+
+    printf("exponents - \n");
+    for(int i = 0; i <5; i++){
+        printf(" %f \n",alpha[i]);
+    }
+
+    return;
+}
+
+double tempStore [15];
+struct mapNode * lastDerivativeNode = 0;
+
+//calculates derivatives of weight, index is 0-5, type, is 0: alpha, 1: beta
+double calculateDerivative(double expected, struct mapNode * node, int index, int type){
+
+    if(lastDerivativeNode !=node){
+         tempStore[0] = (maxBeta[0] + node->utilityAccessFactor);
+         tempStore[1] = (maxBeta[1] + node->populationFactor);
+         tempStore[2] = (maxBeta[2] + node->employmentAccess);
+         tempStore[3] = (maxBeta[3] + node->jobQuantity);
+         tempStore[4] = (maxBeta[4] + node->rentFactor);
+
+         tempStore[5] = pow(tempStore[0],alpha[0]);
+         tempStore[6] = pow(tempStore[1],alpha[1]);
+         tempStore[7] = pow(tempStore[2],alpha[2]);
+         tempStore[8] = pow(tempStore[3],alpha[3]);
+         tempStore[9] = pow(tempStore[4],alpha[4]);
+
+         tempStore[10] = pow(tempStore[0],alpha[0]-1);
+         tempStore[11] = pow(tempStore[1],alpha[1]-1);
+         tempStore[12] = pow(tempStore[2],alpha[2]-1);
+         tempStore[13] = pow(tempStore[3],alpha[3]-1);
+         tempStore[14] = pow(tempStore[4],alpha[4]-1);
+    }
+
+    lastDerivativeNode = node;
+    
+    double rawOut = tempStore[10]*tempStore[11]*tempStore[12]*tempStore[13]*tempStore[14];
+    double actual = 0.5 + tanh(rawOut)/2;
+    double dif = expected-actual;
+    double firstTerm = 1;
+    for(int i = 0; i < 5; i++){
+        if(i==index) continue;
+        firstTerm *= tempStore[4+i];
+    }
+    if(type==0){//exponential
+        firstTerm *= tempStore[4+index]*log(tempStore[index]);
+    }else{//constant
+        firstTerm *= tempStore[9+index]*(beta[index]-1);
+    }
+    double secTerm = 1/cosh(firstTerm);
+
+    return dif*secTerm*secTerm;
+}
+
+//
+double constLearningRate = 0.001;
+double expLearningRate = 0.004;
+void trainSquare(double expected, struct mapNode * node, double scalarEffect){
+    double changeVal = 0;
+    for(int i = 0; i < 5; i++){
+        changeVal = scalarEffect*expLearningRate*calculateDerivative(expected,node,i,0);
+        alpha[i] -= changeVal;
+        if(alpha[i] < 0)alpha[i] = 0;
+    }
+
+    for(int i = 0; i < 5; i++){
+        changeVal = scalarEffect*constLearningRate*calculateDerivative(expected,node,i,1);
+        beta[i] -= changeVal;
+        if(beta[i] > maxBeta[i])beta[i] = maxBeta[i];
+        if(beta[i] < 0)beta[i] = 0;
+    }
+}
+
+//trains on building a new building in spot
+void trainOnNewBuilding(struct map* myMap, double buildingX, double buildingY){
+    int squareX = buildingX/squareSize;
+    int squareY = buildingY/squareSize;
+    int squareIndex = squareY*xSquares + squareX;
+
+    double negativeValue = 1/(1000*(xSquares*ySquares - 1));
+
+    for(int i = 0; i < xSquares*ySquares;i++){
+        struct mapNode * node = &(myMap->nodes[i]);
+        if(i==squareIndex) trainSquare(1.0,node,1.0);
+        else trainSquare(0.0,node,negativeValue);
+        fillQValues(myMap);
+    }
+}
+
+//get error against building at a location
+double getBuildingError(struct map* myMap, double buildingX, double buildingY){
+    int squareX = buildingX/squareSize;
+    int squareY = buildingY/squareSize;
+    int squareIndex = squareY*xSquares + squareX;
+
+    double negativeValue = 1/(xSquares*ySquares - 1);
+
+    double totalError = 0;
+
+    for(int i = 0; i < xSquares*ySquares;i++){
+        struct mapNode * node = &(myMap->nodes[i]);
+        double expected;
+        double scalar = 1;
+        if(i==squareIndex){
+            expected = 1.0;
+        } 
+        else {
+            expected = 0.0;
+            scalar = negativeValue;
+        }
+
+        double error = expected - node->quality;
+        error *= error;
+        error *= scalar;
+        totalError += error;
+    }
+    return totalError;
+}
+
 
 int main(){
 
@@ -963,15 +1162,50 @@ int main(){
     generateBusStopKAdjacency(4);
     for(int i = 0; i < busStopLength; i++)printBusStop(i);
 
-
-    
     populateMap(&myMap);
+
+    fillQValues(&myMap);
 
     saveMap(&myMap,"mapOutput.txt");
 
     loadMap(&myMap,"mapOutput.txt");
 
     printMap(&myMap);
+
+    saveWeights("weightsFile.txt");
+
+    loadWeights("weightsFile.txt");
+
+    printWeights();
+
+    double buildingXs [7];
+    double buildingYs [7];
+
+    for(int i = 0; i < 7; i++){
+        buildingXs[i] = RANDOM*squareSize*xSquares;
+        buildingYs[i] = RANDOM*squareSize*ySquares;
+    }
+
+    for(int z = 0; z < 20000; z++){
+        double avgError = 0;
+        for(int i = 0; i < 7; i++){
+            avgError = 0;
+            for(int k = 0; k < 7; k++){
+                avgError += getBuildingError(&myMap,buildingXs[k],buildingYs[k]);
+            }
+            printf("Average Error: %f\n",avgError);
+            printWeights();
+            trainOnNewBuilding(&myMap,buildingXs[i],buildingYs[i]);
+            printWeights();
+        }
+
+        avgError = 0;
+        for(int k = 0; k < 7; k++){
+            avgError += getBuildingError(&myMap,buildingXs[k],buildingYs[k]);
+        }
+        printf("Average Error: %f\n",avgError);
+    }
+
 
     return 0;
 }
