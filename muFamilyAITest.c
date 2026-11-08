@@ -31,13 +31,14 @@ struct mapNode{
     double employmentAccess;
     double jobQuantity;
     double rentFactor;
+    double quality;
 };
 
 
 
 //map struct holds an array of map nodes
-int xSquares = 100;
-int ySquares = 100;
+int xSquares = 25;
+int ySquares = 25;
 //size of square in miles;
 double squareSize = 1;
 struct map{
@@ -60,6 +61,7 @@ void initMapNode( struct mapNode * node){
     node->employmentAccess = 0;
     node->jobQuantity = 0;
     node->rentFactor = 0;
+    node->quality = 0;
 
 }
 
@@ -104,6 +106,8 @@ void printNode(struct mapNode * node){
     printf("%f",node->jobQuantity);
     printf(",");
     printf("%f",node->rentFactor);
+    printf(",");
+    printf("%f",node->quality);
     printf("]\n");
 }
 
@@ -132,7 +136,7 @@ void saveMap(struct map* myMap, char * name){
     }
     fwrite(&(xSquares), 1, sizeof(int), fptr);
     fwrite(&(ySquares), 1, sizeof(int), fptr);
-    fwrite(&(squareSize), 1, sizeof(int), fptr);
+    fwrite(&(squareSize), 1, sizeof(double), fptr);
     for(int i = 0; i < xSquares*ySquares; i++){
         printf("Now writing squares\n");
         struct mapNode * node = &(myMap->nodes[i]);
@@ -142,6 +146,7 @@ void saveMap(struct map* myMap, char * name){
         fwrite(&(node->employmentAccess), 1, sizeof(double), fptr);
         fwrite(&(node->jobQuantity), 1, sizeof(double), fptr);
         fwrite(&(node->rentFactor), 1, sizeof(double), fptr);
+        fwrite(&(node->quality), 1, sizeof(double), fptr);
         printNode(node);
     }
 
@@ -163,7 +168,7 @@ void loadMap(struct map* myMap, char * name){
     }
     fread(&(xSquares),sizeof(int),1,fptr);
     fread(&(ySquares),sizeof(int),1,fptr);
-    fread(&(squareSize),sizeof(int),1,fptr);
+    fread(&(squareSize),sizeof(double),1,fptr);
     for(int i = 0; i < xSquares*ySquares; i++){
         printf("Now reading squares\n");
         struct mapNode * node = &(myMap->nodes[i]);
@@ -173,6 +178,7 @@ void loadMap(struct map* myMap, char * name){
         fread(&(node->employmentAccess),sizeof(double),1,fptr);
         fread(&(node->jobQuantity),sizeof(double),1,fptr);
         fread(&(node->rentFactor),sizeof(double),1,fptr);
+        fread(&(node->quality),sizeof(double),1,fptr);
         printNode(node);
     }
 
@@ -311,7 +317,7 @@ void addCensusTrack(struct censusTrack * newCensusTrack){
 
     struct censusTrack * newLs = (struct censusTrack * )(malloc(sizeof(struct censusTrack)*(censusTrackLength+1)));
 
-    for(int i = 0; i < censusTrackLength+1; i++){
+    for(int i = 0; i < censusTrackLength; i++){
         newLs[i] = censusTrackArray[i];
     }
     newLs[censusTrackLength] = *(newCensusTrack);
@@ -379,7 +385,7 @@ void findNearestKCensusTracks(int * retList, int k, double x, double y){
 }
 
 
-double getEmploymentFactor( int x, int y);
+double getEmploymentFactor( struct map* myMap, double x, double y);
 
 
 //factor calculations
@@ -464,7 +470,7 @@ void populateMapNodeWithRawKNearestCensusData(struct map* myMap, int k, int u, d
 
 
     struct mapNode * node = &(myMap->nodes[NODE_AT(x,y)]);
-    node->utilityAccessFactor = utilityFactors[k];
+    //node->utilityAccessFactor = utilityFactors[k];
     node->populationFactor = popFactors[k];
     node->jobQuantity = jobFactors[k];
     node->rentFactor = rentFactors[k];
@@ -499,7 +505,7 @@ void processRawMapData(struct map * myMap){
             for(int ky = -1; ky < 2; ky++){
                 int yPos = yPos0 + ky;
                 if((yPos < 0 )||(yPos >= ySquares)) continue;
-                int index = NODE_AT(kx,ky);
+                int index = NODE_AT(kx*squareSize,ky*squareSize);
                 struct mapNode * otherNode = &(myMap->nodes[i]);
                 numSquares ++;
                 populationAverage += otherNode->populationFactor;
@@ -508,6 +514,10 @@ void processRawMapData(struct map * myMap){
         }
         populationAverage /= numSquares;
         newPopFactors[i] = populationAverage;
+
+
+        //calculate employment access for this square
+        node->employmentAccess = getEmploymentFactor(myMap, xPos0*squareSize, yPos0*squareSize);
     }
 
     for(int i = 0; i < xSquares*ySquares; i++){
@@ -535,7 +545,7 @@ void populateMap(struct map *myMap){
 }
 
 
-
+//***************************IMPLEMENT CENSUS LOADING */
 //loads census track data from csv info
 void loadCensusTrack(struct map* myMap, char * name){
     /*FILE * fptr;
@@ -608,7 +618,325 @@ void loadCensusTrack(struct map* myMap, char * name){
     addCensusTrack(trackC);
 }
 
+void printBusStop(int index);
 
+
+//***IMPLEMENT CORRECT LOADING */
+//load zoning info
+void loadZoning(struct map* myMap, char * name){
+    FILE * fptr;
+
+    fptr = fopen(name,"r");
+
+    if (fptr == NULL) {
+        printf("Error opening the file!\n");
+        return; 
+    }
+    int xSq;
+    int ySq;
+    double sqSize;
+    fread(&(xSq),sizeof(int),1,fptr);
+    fread(&(ySq),sizeof(int),1,fptr);
+    fread(&(sqSize),sizeof(int),1,fptr);
+    for(int i = 0; i < xSq*ySq; i++){
+        printf("Now reading square zoning\n");
+        struct mapNode * node = &(myMap->nodes[i]);
+        int zoningType = i%7;
+        node->zoneType = zoningType;
+        printNode(node);
+    }
+    fclose(fptr);
+    return;
+}
+
+
+//represents a bus stop
+// populate connectedStops array  with connectd stops
+//essentially an N-connected linked list
+struct busStop {
+    double xPos;
+    double yPos;
+    int stopNumber;
+    struct busStop * * connectedStops;
+    int numPossibleNextStops;
+};
+
+struct busStop * * busStops;
+int busStopLength = 0;
+
+void addBusStop( struct busStop * stop ){
+
+    int squareX = stop->xPos/squareSize+0.5;
+    int squareY = stop->yPos/squareSize+0.5;
+    //check busStop is not inside existing square with busStop
+    for(int i = 0; i < busStopLength; i++){
+        int squareXOther = busStops[i]->xPos/squareSize+0.5;
+        int squareYOther = busStops[i]->yPos/squareSize+0.5;
+        if((squareX==squareXOther)&&(squareY==squareYOther)){
+            return;
+        }
+    }
+
+    struct busStop * * newLsA = (struct busStop * *)(malloc(sizeof(struct busStop *)*(busStopLength+1)));
+
+    for(int i = 0; i < busStopLength; i++){
+        newLsA[i] = busStops[i];
+    }
+    newLsA[busStopLength] = (stop);
+
+    stop->stopNumber = busStopLength;
+
+
+
+    if(busStopLength>0)free(busStops);
+    busStopLength++;
+
+
+    busStops = newLsA;
+
+
+    //printBusStop(busStopLength-1);
+}
+
+//initialize a bus stop structure
+void initializeBusStop(struct busStop * stop){
+    stop->xPos = 0;
+    stop->yPos = 0;
+    stop->stopNumber = 0;
+    stop->numPossibleNextStops = 0;
+}
+
+
+//connects two bus stops
+void connectBusStops(struct busStop * stopA,struct busStop * stopB){
+
+    //check they're not already connected
+    for(int i = 0; i < stopA->numPossibleNextStops; i++){
+        if( stopA->connectedStops[i] == stopB) return;
+    }
+
+    struct busStop * * newLsA = (struct busStop * *)(malloc(sizeof(struct busStop *)*(stopA->numPossibleNextStops+1)));
+    struct busStop * * newLsB = (struct busStop * *)(malloc(sizeof(struct busStop * )*(stopB->numPossibleNextStops+1)));
+
+    for(int i = 0; i < stopA->numPossibleNextStops; i++){
+        newLsA[i] = stopA->connectedStops[i];
+    }
+    newLsA[stopA->numPossibleNextStops] = (stopB);
+
+    for(int i = 0; i < stopB->numPossibleNextStops; i++){
+        newLsB[i] = stopB->connectedStops[i];
+    }
+    newLsB[stopB->numPossibleNextStops] = (stopA);
+
+    if( stopA->numPossibleNextStops > 0 ){
+        free(stopA->connectedStops);
+    }
+
+    if( stopB->numPossibleNextStops > 0 ){
+        free(stopB->connectedStops);
+    }
+
+    stopA->connectedStops = newLsA;
+    stopB->connectedStops = newLsB;
+
+    stopA->numPossibleNextStops++;
+    stopB->numPossibleNextStops++;
+}
+
+//find nearest k census tracks to point, fills retList with K integers, each is an index of the track in the censusTrackArray
+void fillNearestKBusStops(int busIndex, int k){
+
+    struct busStop * stop = busStops[busIndex];
+    double x = stop->xPos;
+    double y = stop->yPos;
+
+    double * nearestDistances = (double * )malloc(sizeof(double)*k);
+    int * nearestDistancesIndex = (int * )malloc(sizeof(int)*k);
+    double largestDistance;
+    int largestIndex;
+
+    double maxPossibleDistance = (xSquares+ySquares)*squareSize;
+
+    for(int i = 0; i < k; i++){
+        nearestDistancesIndex[i] = -1;
+        nearestDistances[i] = maxPossibleDistance;
+    }
+
+    for(int i = 0; i < busStopLength; i++){
+        struct busStop * stopB = busStops[i];
+        if(stop==stopB) continue;
+
+        double disX = stopB->xPos - x;
+        double disY = stopB->yPos - y;
+        disX *= disX;
+        disY *= disY;
+        double totalDis = sqrt(disX+disY);
+        largestDistance = nearestDistances[0];
+        largestIndex = 0;
+        for(int j = 0; j < k; j++){
+            if(nearestDistances[j] > largestDistance){
+                largestIndex = j;
+                largestDistance = nearestDistances[j];
+            }
+        }
+        if(largestDistance > totalDis){
+            nearestDistancesIndex[largestIndex] = i;
+            nearestDistances[largestIndex] = totalDis;
+            printf("new nearest distance of %f at index %i to point %f, %f\n",nearestDistances[largestIndex],nearestDistancesIndex[largestIndex],x,y);
+        }
+    }
+
+    for(int i = 0; i < k; i++){
+        if(nearestDistancesIndex[i]==-1) continue;
+        connectBusStops(busStops[nearestDistancesIndex[i]],stop);
+    }
+
+}
+
+//bus stop print out
+void printBusStop(int index){
+    
+    struct busStop * stop = busStops[index];
+    printf("Bus Stop %i at %f , %f -> ",stop->stopNumber, stop->xPos,stop->yPos);
+    for(int j = 0; j < stop->numPossibleNextStops; j++){
+        printf("%i + ",stop->connectedStops[j]->stopNumber);
+    }
+    printf("\n");
+}
+
+//generates bus stop adjacency lists
+void generateBusStopKAdjacency(int k){
+    for(int i = 0; i < busStopLength; i++){
+        fillNearestKBusStops(i,k);
+        printf("did % i bus stop nearest neigbors: \n",i);
+    }
+}
+
+
+
+//finds weighted path betwene any two points
+//busStopScalar adjusts the relative bonus for using bus routes, 0.5 means bus distances cost half of driving distances, (ie 2x bonus)
+//
+double rec_findBestPath(int currentStopIndex, double currentLength, int recursionNum, double targX, double targY, double lastDistance);
+double busStopScalar = 0.5;
+//
+double findWeightedPathBetweenPoints(double x1, double y1, double x2, double y2){
+    double maxDis = (xSquares+ySquares)*squareSize;
+    maxDis *= maxDis;
+    double minPathDistance = maxDis;
+
+    double disX = (x2 - x1);
+    double disY = (y2 - y1);
+    double dis = (disX*disX + disY*disY)*busStopScalar;
+    double straightDis = dis/busStopScalar;
+    minPathDistance = dis;
+    
+
+    /*
+    struct busStop * * busStopss;
+    int busStopLength = 0;
+    */
+    for(int i = 0; i < busStopLength; i++){
+        struct busStop * stop = busStops[i];
+        disX = (stop->xPos - x1);
+        disY = (stop->yPos - y1);
+        double disCompLast = (disX*disX + disY*disY);
+        if(disCompLast > straightDis) continue;
+        dis = disCompLast*busStopScalar;
+
+
+        dis = rec_findBestPath(i,dis,0,x2,y2,maxDis);
+        if(minPathDistance > dis) minPathDistance = dis;
+
+        //printf("analyzed starting at stop % i with distance %f \n",i,dis);
+    }
+
+
+    printf("connecting %f, %f to %f, %f with min distance %f: \n", x1, y1, x2, y2, minPathDistance);
+
+    return minPathDistance;
+}
+
+
+//recursive function used to traverse the bus paths
+int maxRecursions = 10;
+double rec_findBestPath(int currentStopIndex, double currentLength, int recursionNum, double targX, double targY, double lastDistance){
+
+    double bestPath = (xSquares+ySquares)*squareSize;
+    struct busStop * stop = busStops[currentStopIndex];
+    
+    double disX = (stop->xPos - targX);
+    double disY = (stop->yPos - targY);
+    double dis = (disX*disX + disY*disY);
+
+    bestPath = currentLength + dis;
+
+    if(recursionNum < maxRecursions){
+        for(int i = 0; i < stop->numPossibleNextStops; i++){
+
+            
+            double disCompLastX = (stop->connectedStops[i]->xPos - targX);
+            double disCompLastY = (stop->connectedStops[i]->yPos - targY);
+            double disCompLast = (disCompLastX*disCompLastX + disCompLastY*disCompLastY);
+            if(disCompLast > lastDistance) continue;
+
+            disX = (stop->xPos - stop->connectedStops[i]->xPos);
+            disY = (stop->yPos - stop->connectedStops[i]->yPos);
+            dis = (disX*disX + disY*disY)*busStopScalar;
+            dis = rec_findBestPath(stop->connectedStops[i]->stopNumber,currentLength+dis,recursionNum+1,targX,targY,disCompLast);
+            if(dis < bestPath){
+                bestPath = dis;
+            }
+        }
+    }
+
+    return bestPath;
+}
+
+//calulates exployment factor for square
+double getEmploymentFactor( struct map * myMap, double x, double y){
+    double total = 0;
+    for(int i = 0; i < xSquares*ySquares;i++){
+        if((((int)(x/squareSize)) + ((int)(y/squareSize))*xSquares)==i) continue;
+        struct mapNode * node = &(myMap->nodes[i]);
+
+        //check if commercial or industrially zoned
+        if((node->zoneType == 0)||(node->zoneType == 2)||(node->zoneType ==3))continue;
+
+        double dis = findWeightedPathBetweenPoints((i%xSquares)*squareSize,(i/xSquares)*squareSize,x,y);
+        if(dis < squareSize/40) dis = squareSize/40;
+        total += node->jobQuantity/dis;
+    }
+    return total;
+}
+
+//****IMPLEMENT CORRECT LOADING
+//load utility info
+void loadUtility(struct map* myMap, char * name){
+    FILE * fptr;
+
+    fptr = fopen(name,"r");
+
+    if (fptr == NULL) {
+        printf("Error opening the file!\n");
+        return; 
+    }
+    int xSq;
+    int ySq;
+    double sqSize;
+    fread(&(xSq),sizeof(int),1,fptr);
+    fread(&(ySq),sizeof(int),1,fptr);
+    fread(&(sqSize),sizeof(int),1,fptr);
+    for(int i = 0; i < xSq*ySq; i++){
+        printf("Now reading square utility\n");
+        struct mapNode * node = &(myMap->nodes[i]);
+        double utilityCoverage = RANDOM;
+        node->utilityAccessFactor = utilityCoverage;
+        printNode(node);
+    }
+    fclose(fptr);
+    return;
+}
 
 
 int main(){
@@ -622,12 +950,26 @@ int main(){
     printMap(&myMap);
 
     loadCensusTrack(&myMap,"noFile.txt");
+    loadZoning(&myMap,"mapOutput.txt");
+    loadUtility(&myMap,"mapOutput.txt");
+
+    for(int i = 0; i < 30; i++){
+        struct busStop * stop = (struct busStop * )malloc(sizeof(struct busStop));
+        initializeBusStop(stop);
+        stop->xPos = (RANDOM*squareSize*xSquares);
+        stop->yPos = (RANDOM*squareSize*ySquares);
+        addBusStop(stop);
+    }
+    generateBusStopKAdjacency(4);
+    for(int i = 0; i < busStopLength; i++)printBusStop(i);
+
+
     
     populateMap(&myMap);
 
-    //saveMap(&myMap,"mapOutput.txt");
+    saveMap(&myMap,"mapOutput.txt");
 
-    //loadMap(&myMap,"mapOutput.txt");
+    loadMap(&myMap,"mapOutput.txt");
 
     printMap(&myMap);
 
@@ -635,7 +977,3 @@ int main(){
 }
 
 
-
-double getEmploymentFactor( int x, int y){
-    return 1;
-}
