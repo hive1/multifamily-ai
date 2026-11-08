@@ -7,7 +7,7 @@ import numpy as np
 
 # Set up page
 st.set_page_config(layout="wide")
-st.title("🗺️ Broome County Census Tract Explorer")
+st.title("🗺️ Broome County Multifamily Availability Explorer (Beta)")
 st.markdown("Interactive attribute mapping by US Census Tract boundaries.")
 
 # 1. Fetch Geometries dynamically from US Census Bureau (FIPS 36 = NY, 007 = Broome)
